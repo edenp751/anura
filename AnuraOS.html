@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0018)https://anura.pro/ -->
+<html style="background-color: rgb(0, 0, 0);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+		
+		<link rel="stylesheet" href="./AnuraOS_files/bundle.css">
+		<link rel="stylesheet" href="./AnuraOS_files/theme.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+		<link rel="stylesheet" href="./AnuraOS_files/materialsymbols.css">
+		<link rel="stylesheet" href="./AnuraOS_files/matter.css">
+		<title>AnuraOS</title>
+		<meta name="title" content="AnuraOS">
+		<meta name="description" content="AnuraOS is a webOS that has v86 capabilities and a modular app system.">
+		<meta name="og:title" content="AnuraOS">
+		<meta name="og:description" content="AnuraOS is a webOS that has v86 capabilities and a modular app system.">
+		<meta property="og:image" content="/icon.png">
+		<meta property="og:image:width" content="250">
+		<meta property="og:image:height" content="217">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="darkreader-lock">
+
+		<link rel="apple-touch-icon" href="https://anura.pro/pwa_icon.png">
+		<link rel="apple-touch-icon-precomposed" href="https://anura.pro/pwa_icon.png">
+		<link rel="shortcut icon" type="image/png" href="./AnuraOS_files/icon.png">
+		<script src="./AnuraOS_files/idb-keyval.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/all.js.download"></script>
+		<!-- Store is replaced internally -->
+		<!-- <script type="text/javascript" src="dreamland/store.js"></script> -->
+		<script type="text/javascript" src="./AnuraOS_files/Filesystem.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/FilerFS.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/LocalFS.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Platform.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Processes.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/anurad.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Theme.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/libv86.js.download"></script>
+		<script src="./AnuraOS_files/filer.min.js.download" crossorigin=""></script>
+
+		<script type="text/javascript" src="./AnuraOS_files/Lib.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/ExternalLib.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/BrowserLib.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/AnuradHelpersLib.js.download"></script>
+
+		<script type="text/javascript" src="./AnuraOS_files/App.js.download"></script>
+
+		<script type="text/javascript" src="./AnuraOS_files/XAppStub.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/XFrogApp.js.download"></script>
+		<!-- <script
+            type="text/javascript"
+            src="lib/coreapps/ThemeEditor.js"
+        ></script> -->
+		<script type="text/javascript" src="./AnuraOS_files/ExploreApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/GenericApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/ExternalApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/x86MgrApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/RecoveryApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Networking.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/SettingsApp.js.download"></script><style>.dltila {
+	color: var(--theme-fg);
+
+}.dltila .header { margin-left: 20px; font-family: var(--theme-font-sans); }.dltila .container { display: flex; height: calc(100% - 97px); }.dltila .settings-category { margin-left: 20px; margin-right: 10px; width: 100%; }.dltila::-webkit-scrollbar { width: 8px; }.dltila::-webkit-scrollbar-thumb { background-color: var(--theme-secondary-fg); border-radius: 8px; }.dltila::-webkit-scrollbar-button { display: none; }.dltila::-webkit-input-placeholder { color: var(--theme-secondary-fg); }.dltila .settings-body { display: flex; width: 100%; padding-right: 20px; flex-direction: column; overflow: hidden auto; }.dltila .sidebar { margin-left: 20px; margin-top: 15px; }.dltila .sidebar-settings-item { height: 40px; display: flex; align-items: center; margin: 5px; width: 150px; cursor: pointer; border-radius: 5px; transition: 250ms ease-in-out; }.dltila .sidebar-settings-item-name { display: flex; align-items: center; color: var(--theme-secondary-fg); }.dltila .sidebar-settings-item-name > a:hover { color: var(--theme-fg); }.dltila .settings-category-name { color: var(--theme-secondary-fg); margin-bottom: 15px; }.dltila .settings-group { background-color: var(--theme-dark-bg); padding: 10px; border-radius: 10px; width: calc(100% - 40px); margin-right: 10px; }.dltila .settings-item { margin-bottom: 10px; height: 40px; display: flex; justify-content: space-between; align-items: center; width: calc(100% - 20px); }.dltila .settings-group .settings-item:not(:last-of-type) { border-bottom: 1px solid var(--theme-border); }.dltila .settings-item-name, .dltila .matter-switch { margin-left: 10px; font-size: 1rem; }.dltila .settings-button { background-color: var(--theme-secondary-bg); border: none; border-radius: 5px; padding: 5px; color: var(--theme-fg); cursor: pointer; margin-right: 10px; }.dltila .settings-item-text-input {
+  background-color: var(--theme-bg); margin-right: 10px; border: none; border-radius: 4px; padding: 3px; color: var(--theme-fg); font-family: var(--theme-font-sans); height: 1.65em; margin-block: 0px; padding-inline: 10px;
+  &::placeholder { color: color-mix(in srgb, var(--theme-secondary-fg) 80%, var(--theme-bg)); font-family: var(--theme-font-sans); }
+}.dltila .settings-item-text-input:focus { outline: none; }.dltila .sidebar-settings-item-name > a { color: var(--theme-secondary-fg); margin-left: 20px; text-decoration: none; font-family: var(--theme-font-sans); }.dltila .disk-info { display: flex; align-items: center; flex-direction: row; }.dltila .disk-size-bytes { height: 15px; margin-left: 10px; }.dltila .settings-button-group { display: flex; }.dltila .grouped-btn { width: 100%; }.dltila .matter-switch { width: 100%; }.dltila .matter-button-contained { background-color: var(--theme-accent); color: var(--theme-fg); }</style>
+		<script type="text/javascript" src="./AnuraOS_files/TaskManager.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/WallpaperAndStyle.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/BrowserApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/AboutApp.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Dialog.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/RegEdit.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/NodeFS.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/NodePrelude.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Comlink.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Mime.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Fflate.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/v86.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/WmApi.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/AliceWM.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Taskbar.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/ContextMenu.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Launcher.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/QuickSettings.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Calendar.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Bootsplash.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/OobeView.js.download"></script>
+
+		<script type="text/javascript" src="./AnuraOS_files/Utils.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/URIHandler.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Files.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/UI.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Anura.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Settings.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/NotificationService.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/AltTabView.js.download"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Systray.js.download"></script>
+		<!-- <script type="text/javascript" src="libs/bare-mux/index.js"></script> -->
+		<script type="text/javascript" src="./AnuraOS_files/bare.cjs"></script>
+		<script type="text/javascript" src="./AnuraOS_files/Boot.js.download"></script><style>.dl86cy {
+							display: none;
+						
+}</style>
+		<script type="module" src="./AnuraOS_files/bcc.js.download"></script>
+
+		<link rel="manifest" href="https://anura.pro/manifest.json">
+
+		<!-- <script type="text/javascript" src="/dist.js"></script> -->
+		<!-- prod only ^ -->
+	<link rel="stylesheet" href="chrome-extension://ihcjicgdanjaechkgeegckofjjedodee/app/content-style.css"><style>.dlplay {
+		position: absolute;
+		float: right;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		bottom: 60px;
+		right: 10px;
+		z-index: 9997;
+	
+}</style><style>.dlf03s {
+		position: absolute;
+		background: color-mix(in srgb, var(--theme-dark-bg) 77.5%, transparent);
+		bottom: 60px;
+		left: 10px;
+		overflow-y: hidden;
+		visibility: hidden;
+		z-index: -1;
+		opacity: 0;
+		transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}.dlf03s .topSearchBar { display: flex; flex-direction: row; padding: 1em; align-items: center; }.dlf03s .topSearchBar img { width: 1em; height: 1em; margin-right: 1em; }.dlf03s .topSearchBar input { font-family: var(--theme-font-sans); flex-grow: 1; background: transparent; border: none; }.dlf03s .recentItemsWrapper { padding: 1em; font-size: 12px; border-top: 1px solid rgba(22, 22, 22, 0.5); }.dlf03s .recentItemsWrapper .recentItemsText { margin-left: 4em; margin-right: 4em; color: var(--theme-fg); border-bottom: 1px solid rgba(22, 22, 22, 0.5); padding: 1em 0em; }.dlf03s::-webkit-scrollbar { width: 20px; }.dlf03s::-webkit-scrollbar-track { background-color: transparent; }.dlf03s::-webkit-scrollbar-thumb { background-color: var(--theme-bg); border-radius: 20px; border: 6px solid transparent; background-clip: content-box; }.dlf03s::-webkit-scrollbar-thumb:hover { background-color: var(--theme-secondary-bg); }.dlf03s::-webkit-input-placeholder { color: var(--theme-secondary-fg); }.dlf03s .appsView { transition: 0.225s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.075s; padding: 1em; font-size: 12px; flex-grow: 1; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-auto-rows: 8em; max-height: calc(47.2em); overflow-y: auto; opacity: 0; row-gap: 30px; }.dlf03s .appsView .app { display: flex; flex-direction: column; align-items: center; color: var(--theme-fg); }.dlf03s .appsView .app input[type="image"] { margin-bottom: 0.5em; }.dlf03s .appsView .app div { height: 1em; }</style><style>.dlnthb {
+		display: block;
+		opacity: 1;
+		z-index: 9999;
+		visibility: visible;
+
+}.dlnthb .appsView { opacity: 1; row-gap: 0px; }</style><style>.dl0p2n {
+		transition: opacity 0.08s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	
+}</style><style>.dly4mv {
+		opacity: 1;
+		z-index: 9998;
+	
+}</style><style>.dlwurb {
+		opacity: 0;
+		z-index: -1;
+	
+}</style><style>.dlx0bo {
+		bottom: 60px;
+		right: 10px;
+
+}.dlx0bo .quickSettingsContent {
+  display: flex; flex-direction: column; gap: 1em; padding: 1em; height: 100%; overflow-y: scroll;
+  &::-webkit-scrollbar { display: none; }
+  & .topButtons {
+  display: flex; flex-direction: row; gap: 1em;
+  & .symbolButton {
+  border-radius: 28px; background-color: color-mix(
+						in srgb,
+						var(--theme-secondary-bg) 55%,
+						transparent
+					); box-shadow: none; display: flex; justify-content: center; align-items: center; width: 28px; height: 28px; min-height: 0px; min-width: 0px; padding: 0px;
+  & span { font-size: 18px; }
+}
+}
+  & .quickSettingsPinned {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr;
+  & .pinnedSetting {
+  display: flex; flex-direction: column; align-items: center; gap: 1em; padding: 0.5em;
+  & .settingsIcon {
+  display: flex; justify-content: center; align-items: center; width: 34px; height: 34px; min-height: 0px; min-width: 0px; border-radius: 50%; background-color: color-mix(
+							in srgb,
+							var(--theme-secondary-bg) 55%,
+							transparent
+						); transition: background-color 0.15s; box-shadow: none;
+  & span { color: var(--theme-fg); transition: color 0.15s; font-size: 24px; }
+  &.enabled {
+  background-color: color-mix(
+								in srgb,
+								var(--theme-accent) 65%,
+								var(--theme-fg)
+							); transition: background-color 0.15s;
+  & span { color: var(--theme-bg); transition: color 0.15s; }
+}
+}
+  & .settingTitle { display: flex; justify-content: center; align-items: center; font-size: 12px; color: var(--theme-fg); text-align: center; }
+}
+}
+  & .sliderContainer { display: flex; flex-direction: row; gap: 1em; align-items: center; flex-grow: 1; }
+  & .dateContainer {
+  height: 1em; display: flex; flex-direction: row;
+  & span { color: var(--theme-fg); font-size: 12px; }
+}
+}</style><style>.dlxv9v {
+		max-height: calc(60% - 80px);
+		min-height: 20px;
+		bottom: calc(70px + 46%);
+		right: 10px;
+		overflow: hidden;
+
+}.dlxv9v .notificationContainer {
+  display: flex; gap: 2px; padding: 6px; flex-direction: column-reverse; overflow-y: scroll;
+  &::-webkit-scrollbar { display: none; }
+  & .notification {
+  border-radius: 0px;
+  &:first-child { border-bottom-left-radius: 1em; border-bottom-right-radius: 1em; }
+  &:last-child { border-top-left-radius: 1em; border-top-right-radius: 1em; }
+}
+}.dlxv9v .clearButtonContainer {
+  display: flex; justify-content: end;
+  & .clearButton { margin: 0px 6px 6px; color: color-mix(
+					in srgb,
+					var(--theme-accent) 65%,
+					var(--theme-fg)
+				) !important; }
+}</style><style>.dltpfa {
+		min-height: 355px;
+		bottom: 60px;
+		right: 10px;
+
+}.dltpfa .calContent { height: 100%; width: 100%; border-radius: 1em; overflow: hidden; }.dltpfa * { margin: 0px; padding: 0px; box-sizing: border-box; background: transparent; }.dltpfa body { display: flex; height: 100%; justify-content: center; overflow: hidden; font-family: var(--theme-font-sans); color: var(--theme-fg); }.dltpfa .calendar-container { width: 100%; height: 100%; }.dltpfa .calendar-container header { display: flex; align-items: center; padding: 25px 30px 10px; justify-content: space-between; }.dltpfa header .calendar-navigation { display: flex; }.dltpfa header .calendar-navigation span { height: 38px; width: 38px; margin: 0px 1px; cursor: pointer; text-align: center; line-height: 38px; border-radius: 50%; user-select: none; color: var(--theme-secondary-fg); font-size: 1.9rem; }.dltpfa .calendar-navigation span:last-child { margin-right: -10px; }.dltpfa header .calendar-navigation span:hover { background: var(--theme-secondary-bg); }.dltpfa header #calendar-date { font-weight: 500; font-size: 1.45rem; color: var(--theme-secondary-fg); display: flex; gap: 10px; }.dltpfa .calendar-body { padding: 20px; }.dltpfa .calendar-body ul { list-style: none; flex-wrap: wrap; display: flex; text-align: center; }.dltpfa .calendar-body li { width: calc(14.2857%); font-size: 1.07rem; color: var(--theme-secondary-fg); }.dltpfa .calendar-body .calendar-weekdays li { cursor: default; font-weight: 500; }.dltpfa .calendar-body .calendar-dates li { margin-top: 25px; position: relative; z-index: 1; cursor: pointer; }.dltpfa .calendar-dates li.inactive { color: var(--theme-secondary-fg); opacity: 0.5; }.dltpfa .calendar-dates li.active { color: var(--theme-fg); }.dltpfa .calendar-dates li::before { position: absolute; content: ""; z-index: -1; top: 50%; left: 50%; width: 40px; height: 40px; border-radius: 50%; transform: translate(-50%, -50%); }.dltpfa .calendar-dates li.active::before { background: var(--theme-accent); }.dltpfa .calendar-dates li:not(.active):hover::before { background: var(--theme-secondary-bg); }</style><style>.dlrdly {
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+		width: calc(100% - 2px);
+		border-left: 1px solid var(--theme-dark-border);
+		border-right: 1px solid var(--theme-dark-border);
+		background-color: color-mix(in srgb, var(--theme-dark-bg) 78%, transparent);
+	
+}</style><style>.dlvmcu {
+		color-scheme: light;
+		z-index: 9996;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		flex-wrap: wrap;
+
+		--matter-onsurface-rgb: #121212 !important;
+}.dlvmcu * { --matter-helper-theme: 26, 115, 232 !important; }.dlvmcu #content {
+  padding: 79.6px 40px 23.8px; width: 1040px; height: 680px; box-sizing: border-box;
+  &:has(#features) { padding-top: 0px; }
+}.dlvmcu #content .screen { width: 100%; height: 100%; }.dlvmcu .screen h1 { margin: 48px 0px 0px; }.dlvmcu .screen #subtitle { margin: 16px 0px 64px; font-size: 24px; color: rgb(95, 99, 104); }.dlvmcu .screen #gridContent { display: grid; grid-template-columns: auto minmax(0px, 1fr); grid-template-rows: minmax(0px, 1fr) minmax(0px, 1fr); }.dlvmcu .screen #gridContent #topButtons { grid-area: 1 / 1 / span 1 / span 1; }.dlvmcu .screen #gridContent #bottomButtons { place-self: end start; grid-area: 2 / 1 / span 1 / span 1; }.dlvmcu .screen .preferredButton { background-color: rgb(26, 115, 232); border-radius: 16px; border-style: none; color: white; height: 2em; padding-left: 1em; padding-right: 1em; transition: all; }.dlvmcu .screen .preferredButton:hover { background-color: rgb(26, 115, 232); filter: brightness(1.1); }.dlvmcu .screen button { background-color: var(--oobe-bg); border-radius: 16px; border: 1px solid gray; color: rgb(26, 115, 232); height: 2em; margin: 0.5em; padding-left: 1em; padding-right: 1em; cursor: pointer; font-family: var(--theme-font-sans); }.dlvmcu .screen #animation { grid-area: 1 / 2 / span 2 / span 1; margin-left: auto; display: unset; }.dlvmcu .material-symbols-outlined { font-size: 1rem; }.dlvmcu .sub {
+  color: rgb(150, 150, 159); font-size: 1.05rem; display: flex; align-items: center;
+  & > .material-symbols-outlined { font-size: 1.1rem; }
+}.dlvmcu #features #subtitle { margin-bottom: 2rem; }</style><style>.dluxv4 {
+		overflow: hidden;
+
+}.dluxv4 .row {
+  padding-inline: 1em; height: 2rem; font-size: 0.9rem;
+  &, & td, & th {
+  &:not(:first-of-type):not(last-of-type) { border: 1px solid var(--theme-border); border-inline-start: none; border-inline-end: none; }
+  height: 2rem; line-height: 2rem;
+}
+  border-right: 0px !important; border-left: 0px !important;
+  & > td {
+  padding-inline: 0.5rem; padding-left: calc(5px + 0.5rem);
+  & > span {
+  display: flex; align-items: center;
+  &.pid { justify-content: center; }
+}
+}
+}.dluxv4 .icon { height: 1.5rem; width: 1.5rem; margin-right: 0.5rem; }.dluxv4 .row.selected { background: var(--theme-accent); color: var(--theme-fg); }.dluxv4 .listwrapper { height: calc(100% - 8rem); border: 1px var(--theme-border) solid; margin: 0.5rem; width: calc(100% - 1rem); overflow-y: scroll; }.dluxv4 .list {
+  max-height: calc(100% - 8rem); margin-bottom: 0px; border-collapse: collapse; width: 100%; border-color: var(--theme-border); border-inline: none; border-width: 1px; font-size: 0.9rem;
+  & tbody { max-height: calc(100% - 1rem); overflow-y: scroll; }
+  & thead { height: 1rem; position: sticky; top: 0px; background: var(--theme-bg); border-bottom: 1px solid var(--theme-border); }
+  & th {
+  position: relative; font-weight: 400; padding-inline: 0.6rem; padding-block: 0.15rem; text-align: right;
+  &:first-of-type { text-align: left; }
+  font-size: 0.8rem; height: 1.5rem;
+}
+}.dluxv4 .controls { height: 4rem; display: flex; align-items: center; justify-content: flex-end; padding: 0.5rem; }.dluxv4 .resizer { position: absolute; top: 0px; right: 0px; width: 1px; cursor: ew-resize; user-select: none; background: var(--theme-border); }.dluxv4 .resizer:hover { border-color: color-mix(
+				in srgb,
+				var(--theme-border) 80%,
+				var(--theme-fg)
+			); }.dluxv4 .resizing { border-color: color-mix(in srgb, var(--theme-border) 60%, transparent); }.dluxv4 .proc-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }</style><style>.dlpws6 {
+		color: var(--theme-fg);
+
+}.dlpws6 .header { margin-left: 20px; display: flex; justify-content: space-between; }.dlpws6 .current-wallpaper { margin-left: 20px; display: flex; align-items: center; }.dlpws6 .current-wallpaper-image { aspect-ratio: 16 / 9; height: 125px; border-radius: 10px; margin-right: 20px; }.dlpws6 .current-wallpaper-image:hover { cursor: pointer; }.dlpws6 .curr-wallpaper-text { color: var(--theme-secondary-fg); margin-bottom: 5px; }.dlpws6 .curr-wallpaper-name { margin-top: 0px; }.dlpws6 select { background-color: var(--theme-secondary-bg); color: var(--theme-fg); border: none; padding: 5px; border-radius: 5px; font-family: var(--theme-font-sans); outline: none; height: 25px; }.dlpws6 .separator-hr { margin: 20px; border: 2px solid var(--theme-border); border-radius: 10px; }.dlpws6::-webkit-scrollbar { width: 8px; }.dlpws6::-webkit-scrollbar-thumb { background-color: var(--theme-secondary-bg); border-radius: 8px; }.dlpws6::-webkit-scrollbar-button { display: none; }.dlpws6 .wallpaper-list-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-left: 20px; text-align: center; overflow-y: auto; flex-grow: 1; }.dlpws6 .wallpaper-list-item { cursor: pointer; }.dlpws6 .wallpaper-list-item-image { aspect-ratio: 16 / 9; height: 100px; border-radius: 10px; transition: border 0.2s; border: 3px solid transparent; }.dlpws6 .wallpaper-list-item-name { margin: 10px; }.dlpws6 .wallpaper-list-item.selected img { border-color: var(--theme-accent); transition: border 0.2s; }.dlpws6 .custom-wallpaper { margin-left: 20px; margin-bottom: 20px; }.dlpws6 .matter-button-contained { background-color: var(--theme-accent); color: var(--theme-fg); }.dlpws6 #custom-wallpaper-btn { display: flex; justify-content: center; align-items: center; background-color: var(--theme-secondary-bg); color: var(--theme-fg); border-radius: 10px; aspect-ratio: 16 / 9; height: 100px; width: 177.78px; cursor: pointer; }.dlpws6 input[type="color"] { background-color: transparent; border: none; padding: 0px; width: 2.5rem; height: 2rem; }.dlpws6 input[type="color" i]::-webkit-color-swatch { border-radius: 0.5rem; border: 1px solid var(--theme-border); height: 25px; }.dlpws6 input[type="color" i]::-webkit-color-swatch-wrapper { padding: 0px; height: 25px; }.dlpws6 .wall-fit { display: flex; gap: 5px; }.dlpws6 input[type="color" i]::-webkit-color-swatch-wrapper { padding: 0px; border: 0px; }.dlpws6 input[type="color" i]::-webkit-color-swatch { border-radius: 1rem; padding: 0px; border-color: var(--theme-border); }.dlpws6 .editor { display: flex; justify-content: space-between; align-items: center; width: 100%; padding-block: 0.6rem; }.dlpws6 .editor:not(:last-of-type) { border-bottom: 1px solid var(--theme-border); }.dlpws6 .editor input { margin: 0px 0.8rem; }.dlpws6 #colors { display: flex; flex-direction: column; padding-inline: 2rem; padding-top: 0.6rem; }.dlpws6 #head {
+  padding: 0.5rem 1rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0px; background: var(--theme-bg);
+  & > h1 { margin-left: 0.5rem; margin-block: 0.9rem; }
+}.dlpws6 #btns {
+  display: flex; gap: 0.15rem; opacity: 1; transition: opacity 0.15s allow-discrete;
+  & button {
+  padding: 0.5rem 0.75rem; border-radius: 10rem; background: transparent; color: var(--theme-fg); border: none; cursor: pointer; font-family: var(--theme-font-sans); font-size: 1rem; display: flex; align-items: center; gap: 0.3rem; transition: background 0.15s;
+  & .material-symbols-outlined { font-size: 1.7rem; }
+  &:hover, &:focus-visible { background: var(--theme-secondary-bg); transition: background 0.15s; outline: none; }
+  &:active { background: color-mix(
+						in srgb,
+						var(--theme-secondary-bg) 90%,
+						var(--theme-fg)
+					); transition: background 0.05s; }
+}
+  &[hidden] { opacity: 0; pointer-events: none; transition: opacity 0.15s allow-discrete; }
+  @starting-style {
+  opacity: 0;
+}
+}.dlpws6:has(#colors) h2:not(:first-of-type) {
+  color: var(--theme-accent);
+  &::after { width: 100%; }
+}.dlpws6:has(#colors) h2 {
+  color: var(--theme-fg);
+  &::after { width: 0px; }
+}.dlpws6:not(:has(#colors)) h2 {
+  color: var(--theme-accent);
+  &::after { width: 100%; }
+}.dlpws6:not(:has(#colors)) h2:not(:first-of-type) {
+  color: var(--theme-fg);
+  &::after { width: 0px; }
+}.dlpws6 h2 {
+  display: inline-block; margin-right: 1rem; cursor: pointer; font-size: 1rem; text-transform: capitalize;
+  &::after { content: ""; width: 0px; height: 3px; background: var(--theme-accent); margin-top: 0.5rem; transition: width 0.15s; display: flex; place-self: center; }
+}</style><style>.dlgls8 {
+		background-color: var(--theme-bg);
+		color: var(--theme-fg);
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+
+}.dlgls8 #sidebar {
+  width: 22rem; padding: 1rem 1rem 1rem 0px;
+  & div { padding-block: 0.7rem; font-size: 1.1rem; border-radius: 0px 3rem 3rem 0px; padding-left: 1.25em; display: flex; align-items: center; gap: 0.5rem; font-weight: 600; width: 100%; transition: 0.2s; }
+  & div.selected { color: color-mix(in srgb, var(--theme-accent) 35%, var(--theme-fg)); background-color: color-mix(
+					in srgb,
+					var(--theme-accent) 30%,
+					transparent
+				); font-weight: 700; transition: 0.15s; }
+}.dlgls8 h1 { font-size: 2em; }.dlgls8 article { width: 100%; height: 100%; overflow-y: auto; }.dlgls8 a, .dlgls8 a:link { color: var(--theme-accent); }.dlgls8 a:visited { color: var(--theme-accent); }.dlgls8 #body {
+  font-size: 1.05rem; padding: 1rem 1rem 1rem 2rem;
+  & p { margin-block: 0.5rem; }
+  & p img { width: 1.05rem; height: 1.05rem; top: 0.2rem; position: relative; margin-right: 0.2rem; }
+  & span:has(img) { gap: 0.2rem; align-items: center; font-weight: 600; }
+  & code { background-color: var(--theme-secondary-bg); padding: 0.1rem 0.3rem; border-radius: 0.2rem; font-family: var(--theme-font-mono); }
+  & h2 { margin-block: 1.5rem 0px; }
+  & h2:first-of-type { margin-block-start: 0.25rem; }
+}.dlgls8 .head {
+  display: flex; flex-direction: row; gap: 1rem; align-items: center;
+  & img { width: 2.5rem; height: 2.5rem; }
+}.dlgls8::-webkit-scrollbar { width: 8px; }.dlgls8::-webkit-scrollbar-thumb { background-color: var(--theme-secondary-bg); border-radius: 8px; }.dlgls8::-webkit-scrollbar-button { display: none; }</style><style>.dlgmuv {
+		display: flex;
+		border-top: 1px solid var(--theme-border);
+
+}.dlgmuv #pane-left { width: max(10%, 200px); border-right: 1px solid var(--theme-border); overflow: scroll; white-space: nowrap; padding-left: 0.5em; }.dlgmuv #pane-right { width: calc(100% - max(10%, 200px)); min-width: 400px; padding-inline: 0.5em; overflow: scroll; }.dlgmuv #detail { width: 100%; height: 100%; }.dlgmuv table { width: 100%; margin: 0px; }.dlgmuv summary { cursor: pointer; }.dlgmuv .value { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; background-color: var(--theme-bg); outline: none; }.dlgmuv .name { max-width: 8em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.dlgmuv td { padding-inline: 0.5em; }.dlgmuv tr { height: 4rem; margin: 0px; }.dlgmuv label { width: 100%; }.dlgmuv table { border-color: var(--theme-border); }</style><style>.dleqxb {
+		padding: 14px;
+		height: calc(100% - 24px);
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+
+}.dleqxb h2 { font-size: 1.2rem; }.dleqxb .buttons {
+  flex-grow: 1; display: flex; justify-content: flex-end; margin-top: 10px;
+  & .matter-button-contained { background-color: var(--theme-accent); color: var(--theme-fg); }
+}.dleqxb .confirm { margin-left: 5px; }.dleqxb .matter-progress-linear { width: 100%; }</style><style>.Panel-nywi {
+                display: flex;
+                position: absolute;
+                background: color-mix(
+                    in srgb,
+                    var(--theme-dark-bg) 77.5%,
+                    transparent
+                );
+                border: 1px solid var(--theme-dark-border);
+                box-shadow: inset 0 0 0 1px var(--theme-secondary-bg);
+                border-radius: 1em;
+
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+
+                flex-grow: 1;
+                flex-direction: column;
+            
+} @scope (.Panel-nywi) to (:not(.Panel-nywi).dlcomponent *) {  } </style><style>.Panel-0h0c {
+                display: flex;
+                position: absolute;
+                background: color-mix(
+                    in srgb,
+                    var(--theme-dark-bg) 77.5%,
+                    transparent
+                );
+                border: 1px solid var(--theme-dark-border);
+                box-shadow: inset 0 0 0 1px var(--theme-secondary-bg);
+                border-radius: 1em;
+
+                backdrop-filter: blur(30px);
+                -webkit-backdrop-filter: blur(30px);
+
+                flex-grow: 0;
+                flex-direction: column;
+            
+} @scope (.Panel-0h0c) to (:not(.Panel-0h0c).dlcomponent *) {  } </style></head>
+
+	<body class="platform-desktop" style="--theme-fg: #FFFFFF; --theme-secondary-fg: #C1C1C1; --theme-border: #444444; --material-border: #444444; --theme-dark-border: #000000; --theme-bg: #202124; --material-bg: #202124; --theme-secondary-bg: #383838; --theme-dark-bg: #161616; --theme-accent: #4285F4; --matter-helper-theme: #4285F4; background: url(&quot;/assets/wallpaper/bundled_wallpapers/Nocturne.jpg&quot;) center center / cover no-repeat fixed;">
+
+<veepn-lock-screen><template shadowrootmode="open"><style>html{box-sizing:border-box;text-size-adjust:100%;word-break:normal;tab-size:4}*,:before,:after{background-repeat:no-repeat;box-sizing:border-box}:before,:after{text-decoration:inherit;vertical-align:inherit}*{padding:0;margin:0}hr{overflow:visible;height:0;color:inherit;border:0;border-top:1px solid}details,main{display:block}summary{display:list-item}small{font-size:80%}[hidden]{display:none!important}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}a{background-color:transparent}a:active,a:hover{outline-width:0}code,kbd,pre,samp{font-family:monospace}pre{font-size:1em}b,strong{font-weight:bolder}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}iframe{border-style:none}input{border-radius:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{appearance:none}textarea{overflow:auto;resize:vertical}button,input,optgroup,select,textarea{font:inherit;color:inherit}optgroup{font-weight:700}button{overflow:visible}button,select{text-transform:none}button,[type=button],[type=reset],[type=submit],[role=button]{cursor:pointer}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button,html [type=button],[type=reset],[type=submit]{appearance:auto}button,input,select,textarea{background-color:transparent;border-style:none}button:-moz-focusring,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{outline:1px dotted ButtonText}select{appearance:none}a:focus,button:focus,input:focus,select:focus,textarea:focus{outline-width:0}select::-ms-expand{display:none}select::-ms-value{color:currentcolor}legend{border:0;color:inherit;display:table;white-space:normal;max-width:100%}::-webkit-file-upload-button{appearance:auto;color:inherit;font:inherit}[disabled]{cursor:default}img{border-style:none}progress{vertical-align:baseline}[aria-busy=true]{cursor:progress}[aria-controls]{cursor:pointer}[aria-disabled=true]{cursor:default}ul,ol{list-style-type:none}figure{margin:0}@keyframes slide-in{0%{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}.gradient-blue{background:radial-gradient(106.41% 128.47% at 50.15% 128.47%,#23abff,#3066ff)}.gradient-green{background:radial-gradient(92.26% 118.88% at 50.15% .13%,#00c3c3,#00aab3)}.gradient-purple{background:radial-gradient(165.12% 115.56% at 50.15% .13%,#a15aff,#00a0eb)}.bg-blue{background-color:#f2f5ff}.bg-purple{background-color:#f7f0ff}.bg-green{background-color:#ebffed}.lock-screen{font-family:FigtreeVF,sans-serif;letter-spacing:normal;position:fixed;z-index:2147483638;right:24px;bottom:24px;width:327px;border-radius:24px;overflow:hidden;box-shadow:0 24px 32px #00000014;animation:slide-in .3s ease-in-out forwards}.lock-screen__content{position:relative;padding:24px 24px 64px}.lock-screen__close{position:absolute;top:16px;right:16px;width:24px;height:24px;display:flex;align-items:center;justify-content:center;opacity:.5}.lock-screen__label{height:26px;width:fit-content;border-radius:50px;background-color:#fff3;padding-inline:16px;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font-size:12px;line-height:18px;margin:-8px auto 16px}.lock-screen__title{color:#fff;text-align:center;font-size:20px;line-height:28px;font-weight:600;margin-bottom:8px}.lock-screen__description{color:#f5f6f7;text-align:center;font-size:14px;line-height:20px}.lock-screen__description b{font-weight:600}.lock-screen__card{position:relative;z-index:1;margin-top:-44px;background-color:#fff;border-radius:24px;padding:32px 20px 20px}.lock-screen__inner{margin-bottom:24px}.lock-screen__submit{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:16px;height:40px;width:100%;border-radius:12px;padding-inline:16px;background-color:#f70;color:#fff;margin-bottom:16px}.lock-screen__skip{display:flex;align-items:center;justify-content:center;font-size:14px;line-height:20px;color:#82829c;margin-inline:auto}.price-card{border:1px solid #f2f2fc;background:linear-gradient(254.14deg,#fafbff .04%,#f5f8ff 100.04%);border-radius:24px;padding:24px 28px}.price-card__label{color:#4a5764;text-align:center;font-size:14px;line-height:20px;text-transform:uppercase;margin-bottom:16px}.price-card__price{display:flex;justify-content:center;align-items:flex-start;column-gap:2px;margin-bottom:12px}.price-card__currency{color:#515478;font-size:18px;line-height:28px}.price-card__number{color:#14142a;text-align:center;font-size:64px;line-height:54px}.price-card__wrap{display:flex;flex-direction:column}.price-card__decimal{color:#515478;font-size:18px;line-height:28px;font-weight:600}.price-card__period{color:#515478;font-size:14px;line-height:20px;margin-top:-6px}.price-card__discount{position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:12px}.price-card__discount-divider{position:absolute;z-index:0;top:50%;left:0;width:100%;height:1px;background-color:#dbe2f9;transform:translateY(-50%)}.price-card__discount-icon{position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%)}.price-card__discount-text{position:relative;z-index:2;color:#fff;font-size:12px;font-weight:600;line-height:18px}.price-card__features{display:flex;align-items:center;justify-content:center;column-gap:16px}.price-card__feature{color:#222e3a;font-size:14px;line-height:20px;display:flex;align-items:center;gap:6px}.price-card__feature:before{content:"";display:block;width:4px;height:4px;background-color:#20df9e;border-radius:50%;flex-shrink:0}.features-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.features-list__item{display:flex;flex-direction:column;align-items:center;gap:6px}.features-list__icon{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center}.features-list__text{color:#293a53;text-align:center;font-size:16px;line-height:24px;letter-spacing:-.1px}</style></template><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></veepn-lock-screen><div id="processes"></div><div class="dlplay" style="display: flex;"></div><div class="dlf03s false Panel-0h0c dlcomponent" data-component="Panel" id="launcher" style="width: min(70%, 35em); height: min(30%, 20em); margin: 0px;"><div class="topSearchBar"><img src="./AnuraOS_files/icon.png"><input placeholder="Search your tabs, files, apps, and more..." style="outline: none; color: var(--theme-fg);"></div><div class="appsView" id="appsView"><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/chrome.svg"><div class="app-shortcut-name">Anura Browser</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/settings.png"><div class="app-shortcut-name">Settings</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/system-monitor.svg"><div class="app-shortcut-name">Task Manager</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/aboutapp.png"><div class="app-shortcut-name">About Anura</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/wallpaper.png"><div class="app-shortcut-name">Wallpaper &amp; Style</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/explore.png"><div class="app-shortcut-name">Explore</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/regedit.svg"><div class="app-shortcut-name">Registry Editor</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/term.png"><div class="app-shortcut-name">v86 Terminal</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/files.png"><div class="app-shortcut-name">File Manager</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/playstore.webp"><div class="app-shortcut-name">Marketplace</div></div><div class="app dlcomponent" data-component="LauncherShortcut"><input class="app-shortcut-image showDialog" style="width: 40px; height: 40px" type="image" src="./AnuraOS_files/term(1).png"><div class="app-shortcut-name">Anura Shell</div></div></div></div><div class="dl86cy"></div><div class="dl0p2n dlwurb dlx0bo Panel-nywi dlcomponent" data-component="Panel" id="quickSettings" style="width: 360px; height: 46%; margin: 0px;"><div class="quickSettingsContent"><div class="topButtons"><button class="matter-button-contained symbolButton" title="Exit anuraOS"><span class="material-symbols-outlined">power_settings_new</span></button><button class="matter-button-contained symbolButton"><span class="material-symbols-outlined">settings</span></button><button class="matter-button-contained symbolButton"><span class="material-symbols-outlined">fullscreen</span></button></div><div class="quickSettingsPinned"><div class="pinnedSetting" title="Reduced motion"><button class="matter-button-contained settingsIcon disabled"><span class="material-symbols-outlined">accessibility</span></button><div class="settingTitle"><span>Accessibility</span></div></div><div class="pinnedSetting" title="Remove background blur"><button class="matter-button-contained settingsIcon disabled"><span class="material-symbols-outlined">speed</span></button><div class="settingTitle"><span>Performance Mode</span></div></div><div class="pinnedSetting" title="Enable the launcher keybind"><button class="matter-button-contained settingsIcon enabled"><span class="material-symbols-outlined">keyboard_command_key</span></button><div class="settingTitle"><span>Launcher Keybind</span></div></div></div><div class="sliderContainer"></div><div class="dateContainer"><span>Mon, Feb 9</span></div></div></div><div class="dl0p2n dlwurb dly4mv dltpfa Panel-nywi dlcomponent" data-component="Panel" id="calendar" style="width: 380px; height: 380px; margin: 0px;"><div class="calContent"><link rel="stylesheet" href="./AnuraOS_files/materialsymbols.css"><div class="calendar-container"><header class="calendar-header"><div id="calendar-date"><span class="calendar-current-month">February</span><span class="calendar-current-year">2026</span></div><div class="calendar-navigation"><span class="material-symbols-outlined" id="cal-prev">chevron_left</span><span class="material-symbols-outlined" id="cal-next">chevron_right</span></div></header><div class="calendar-body"><ul class="calendar-weekdays"><li>Sun</li><li>Mon</li><li>Tue</li><li>Wed</li><li>Thu</li><li>Fri</li><li>Sat</li></ul><ul class="calendar-dates"><li class="">1</li><li class="">2</li><li class="">3</li><li class="">4</li><li class="">5</li><li class="">6</li><li class="">7</li><li class="">8</li><li class="active">9</li><li class="">10</li><li class="">11</li><li class="">12</li><li class="">13</li><li class="">14</li><li class="">15</li><li class="">16</li><li class="">17</li><li class="">18</li><li class="">19</li><li class="">20</li><li class="">21</li><li class="">22</li><li class="">23</li><li class="">24</li><li class="">25</li><li class="">26</li><li class="">27</li><li class="">28</li></ul></div></div></div></div><div class="dl0p2n dlwurb dlxv9v Panel-0h0c dlcomponent" data-component="Panel" id="notificationCenter" style="width: 360px; margin: 0px; display: none;"><div class="notificationContainer"></div><div class="clearButtonContainer"><button class="matter-button-text clearButton">Clear all</button></div></div><footer class="dlrdly"><div id="launcher-button-container"><div id="launcher-button"></div></div><nav id="taskbar-bar"><ul><li class="taskbar-button"><input class="showDialog" type="image" draggable="true" src="./AnuraOS_files/chrome.svg" title="Anura Browser"><div class="lightbar" style="position: relative; bottom: 0px; background-color:#FFF; width:30%; left:50%; transform:translateX(-50%);visibility:hidden"></div></li><li class="taskbar-button"><input class="showDialog" type="image" draggable="true" src="./AnuraOS_files/settings.png" title="Settings"><div class="lightbar" style="position: relative; bottom: 0px; background-color:#FFF; width:30%; left:50%; transform:translateX(-50%);visibility:hidden"></div></li><li class="taskbar-button"><input class="showDialog" type="image" draggable="true" src="./AnuraOS_files/files.png" title="File Manager"><div class="lightbar" style="position: relative; bottom: 0px; background-color:#FFF; width:30%; left:50%; transform:translateX(-50%);visibility:hidden"></div></li><li class="taskbar-button"><input class="showDialog" type="image" draggable="true" src="./AnuraOS_files/term(1).png" title="Anura Shell"><div class="lightbar" style="position: relative; bottom: 0px; background-color:#FFF; width:30%; left:50%; transform:translateX(-50%);visibility:hidden"></div></li></ul><ul></ul></nav><div id="taskbar-right"><span id="date-container"><span>Feb 9</span></span><span id="taskinfo-container"><div class="flex flexcenter" style="gap: 4px;"><span>7:09</span><span class="material-symbols-outlined">signal_wifi_4_bar</span><span class="systray"></span><span><span class="notification-badge hidden">0</span></span></div></span></div></footer><div class="alttab-container alttab-hidden" style="z-index: 1;"><div class="alttab-nowindows"><span>No windows</span></div></div></body></html>
